@@ -5,9 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/Java_Note/Java_Note.iml" filepath="$PROJECT_DIR$/Java_Note/Java_Note.iml" />
       <module fileurl="file://$PROJECT_DIR$/debugStudy/debugStudy.iml" filepath="$PROJECT_DIR$/debugStudy/debugStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/myArray/myArray.iml" filepath="$PROJECT_DIR$/myArray/myArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myArrayList/myArrayList.iml" filepath="$PROJECT_DIR$/myArrayList/myArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/myBasicTest/myBasicTest.iml" filepath="$PROJECT_DIR$/myBasicTest/myBasicTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/myClass/myClass.iml" filepath="$PROJECT_DIR$/myClass/myClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMethod/myMethod.iml" filepath="$PROJECT_DIR$/myMethod/myMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
     </modules>
   </component>
 </project>
