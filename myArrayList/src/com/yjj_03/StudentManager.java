@@ -68,6 +68,7 @@ public class StudentManager {
         String sid;
 
         //为了让程序能够回到这里，我们使用循环实现
+        //判断学生学号是否已经存在
         while (true) {
             System.out.println("请输入学生学号：");
             sid = sc.nextLine();

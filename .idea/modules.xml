@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/myArrayList/myArrayList.iml" filepath="$PROJECT_DIR$/myArrayList/myArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/myBasicTest/myBasicTest.iml" filepath="$PROJECT_DIR$/myBasicTest/myBasicTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/myClass/myClass.iml" filepath="$PROJECT_DIR$/myClass/myClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myExtends/myExtends.iml" filepath="$PROJECT_DIR$/myExtends/myExtends.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMethod/myMethod.iml" filepath="$PROJECT_DIR$/myMethod/myMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
     </modules>
