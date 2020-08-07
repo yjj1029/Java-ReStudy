@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java_Note/Java_Note.iml" filepath="$PROJECT_DIR$/Java_Note/Java_Note.iml" />
       <module fileurl="file://$PROJECT_DIR$/debugStudy/debugStudy.iml" filepath="$PROJECT_DIR$/debugStudy/debugStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myAPIStudy/myAPIStudy.iml" filepath="$PROJECT_DIR$/myAPIStudy/myAPIStudy.iml" />
       <module fileurl="file://$PROJECT_DIR$/myArray/myArray.iml" filepath="$PROJECT_DIR$/myArray/myArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/myArrayList/myArrayList.iml" filepath="$PROJECT_DIR$/myArrayList/myArrayList.iml" />
       <module fileurl="file://$PROJECT_DIR$/myBasicTest/myBasicTest.iml" filepath="$PROJECT_DIR$/myBasicTest/myBasicTest.iml" />
