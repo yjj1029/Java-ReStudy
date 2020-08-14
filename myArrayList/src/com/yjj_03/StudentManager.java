@@ -2,7 +2,7 @@
  * @作者 鄢加军
  * @我的学习 $ https://github.com/yjj1029/Java-ReStudy
  * @想说的话 靠自己才能成功，自律才会成功！！！
- * @创建时间 2020/8/5 15:35
+ * @创建时间 2020/8/14 10:50
  */
 package com.yjj_03;
 
@@ -13,13 +13,14 @@ import java.util.Scanner;
     学生管理系统
  */
 public class StudentManager {
+
     public static void main(String[] args) {
-
+        //创建集合对象，用于存储学生数据
         ArrayList<Student> array = new ArrayList<Student>();
-        //使用循环完成再次回到主界面
-        while (true) {
 
-            //使用输出语句完成主界面的编写
+        //用循环完成再次回到主界面
+        while (true) {
+            //用输出语句完成主界面的编写
             System.out.println("--------欢迎来到学生管理系统--------");
             System.out.println("1 添加学生");
             System.out.println("2 删除学生");
@@ -33,34 +34,57 @@ public class StudentManager {
             String line = sc.nextLine();
 
             //用switch语句完成操作的选择
-            //使用System.exit(0);来退出java虚拟机
             switch (line) {
                 case "1":
-//                    System.out.println("添加学生");
-                    addStuednt(array);
+                    addStudent(array);
                     break;
                 case "2":
-//                    System.out.println("删除学生");
-                    deleteStuednt(array);
+                    deleteStudent(array);
                     break;
                 case "3":
 //                    System.out.println("修改学生");
-                    updateStuednt(array);
+                    updateStudent(array);
                     break;
                 case "4":
-//                    System.out.println("查看所有学生");
-                    findAllStuednt(array);
+                    findAllStudent(array);
                     break;
                 case "5":
-                    System.out.println("感谢使用！");
-                    System.exit(0);
+                    System.out.println("谢谢使用");
+                    System.exit(0); //JVM退出
             }
         }
-
     }
 
-    //定义一个方法，添加学生信息
-    public static void addStuednt(ArrayList<Student> array){
+    //定义一个方法，用于添加学生信息
+    /*
+    public static void addStudent(ArrayList<Student> array) {
+        //键盘录入学生对象所需要的数据,显示提示信息，提示要输入何种信息
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("请输入学生学号：");
+        String sid = sc.nextLine();
+        System.out.println("请输入学生姓名：");
+        String name = sc.nextLine();
+        System.out.println("请输入学生年龄：");
+        String age = sc.nextLine();
+        System.out.println("请输入学生居住地：");
+        String address = sc.nextLine();
+
+        //创建学生对象，把键盘录入的数据赋值给学生对象的成员变量
+        Student s = new Student();
+        s.setSid(sid);
+        s.setName(name);
+        s.setAge(age);
+        s.setAddress(address);
+
+        //将学生对象添加到集合中
+        array.add(s);
+
+        //给出添加成功提示
+        System.out.println("添加学生成功");
+    }
+    */
+    public static void addStudent(ArrayList<Student> array) {
         //键盘录入学生对象所需要的数据,显示提示信息，提示要输入何种信息
         Scanner sc = new Scanner(System.in);
 
@@ -68,7 +92,6 @@ public class StudentManager {
         String sid;
 
         //为了让程序能够回到这里，我们使用循环实现
-        //判断学生学号是否已经存在
         while (true) {
             System.out.println("请输入学生学号：");
             sid = sc.nextLine();
@@ -78,19 +101,17 @@ public class StudentManager {
                 System.out.println("你输入的学号已经被使用，请重新输入");
             } else {
                 break;
-            }}
+            }
+        }
 
-        System.out.println("请输入学生的姓名：");
+        System.out.println("请输入学生姓名：");
         String name = sc.nextLine();
-
-        System.out.println("请输入学生的年龄：");
+        System.out.println("请输入学生年龄：");
         String age = sc.nextLine();
-
-        System.out.println("请输入学生的居住地：");
+        System.out.println("请输入学生居住地：");
         String address = sc.nextLine();
 
         //创建学生对象，把键盘录入的数据赋值给学生对象的成员变量
-
         Student s = new Student();
         s.setSid(sid);
         s.setName(name);
@@ -120,31 +141,63 @@ public class StudentManager {
         return flag;
     }
 
-
-    //定义一个方法，查看学生信息
-    public static void findAllStuednt(ArrayList<Student> array){
-
-        //判断集合中是否有数据，如果没有显示提示信息
-        //使用return，让程序不再往下执行
-        if (array.size()==0){
-            System.out.println("当前系统没有数据！");
-            return;
-        }
+    //定义一个方法，用于查看学生信息
+    /*
+    public static void findAllStudent(ArrayList<Student> array) {
         //显示表头信息
+        //\t 其实就是tab键的位置
         System.out.println("学号\t\t\t姓名\t\t年龄\t\t居住地");
 
         //将集合中数据取出按照对应格式显示学生信息，年龄显示补充“岁”
-        for (int i=0;i<array.size();i++){
+        for (int i = 0; i < array.size(); i++) {
             Student s = array.get(i);
-            System.out.println(s.getSid() + "\t\t\t" + s.getName() + "\t\t" + s.getAge() + "岁\t\t" + s.getAddress());
+            System.out.println(s.getSid() + "\t" + s.getName() + "\t" + s.getAge() + "岁\t\t" + s.getAddress());
+        }
+    }
+    */
+    public static void findAllStudent(ArrayList<Student> array) {
+        //判断集合中是否有数据，如果没有显示提示信息
+        if (array.size() == 0) {
+            System.out.println("无信息，请先添加信息再查询");
+            //为了让程序不在往下执行，给出return;
+            return;
         }
 
 
+        //显示表头信息
+        //\t 其实就是tab键的位置
+        System.out.println("学号\t\t\t姓名\t\t年龄\t\t居住地");
+
+        //将集合中数据取出按照对应格式显示学生信息，年龄显示补充“岁”
+        for (int i = 0; i < array.size(); i++) {
+            Student s = array.get(i);
+            System.out.println(s.getSid() + "\t" + s.getName() + "\t" + s.getAge() + "岁\t\t" + s.getAddress());
+        }
     }
 
-    //定义一个方法，删除学生信息
-    public static void deleteStuednt(ArrayList<Student> array){
+    //定义一个方法，用于删除学生信息
+    /*
+    public static void deleteStudent(ArrayList<Student> array) {
+        //键盘录入要删除的学生学号,显示提示信息
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("请输入你要删除的学生的学号：");
+        String sid = sc.nextLine();
+
+        //遍历集合将对应学生对象从集合中删除
+        for(int i=0; i<array.size(); i++) {
+            Student s = array.get(i);
+            if(s.getSid().equals(sid)) {
+                array.remove(i);
+                break;
+            }
+        }
+
+        //给出删除成功提示
+        System.out.println("删除学生成功");
+    }
+    */
+    public static void deleteStudent(ArrayList<Student> array) {
         //键盘录入要删除的学生学号,显示提示信息
         Scanner sc = new Scanner(System.in);
 
@@ -154,7 +207,6 @@ public class StudentManager {
         //在删除/修改学生操作前，对学号是否存在进行判断
         //如果不存在，显示提示信息
         //如果存在，执行删除/修改操作
-        //在外面定义index是为了能够在循环外面使用index
         int index = -1;
 
         for (int i = 0; i < array.size(); i++) {
@@ -165,7 +217,7 @@ public class StudentManager {
                 break;
             }
         }
-        //index=-1代表没被修改，即信息不存在
+
         if (index == -1) {
             System.out.println("该信息不存在，请重新输入");
         } else {
@@ -175,8 +227,8 @@ public class StudentManager {
         }
     }
 
-    //定义一个方法，修改学生信息
-    public static void updateStuednt(ArrayList<Student> array){
+    //定义一个方法，用于修改学生信息
+    public static void updateStudent(ArrayList<Student> array) {
         //键盘录入要修改的学生学号，显示提示信息
         Scanner sc = new Scanner(System.in);
 
@@ -210,6 +262,5 @@ public class StudentManager {
         //给出修改成功提示
         System.out.println("修改学生成功");
     }
-
 }
 

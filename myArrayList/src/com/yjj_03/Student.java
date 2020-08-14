@@ -23,8 +23,7 @@ public class Student {
     public Student() {
     }
 
-
-    public Student(String sid, String name, String age, String address) {
+    public Student (String sid, String name, String age, String address) {
         this.sid = sid;
         this.name = name;
         this.age = age;
@@ -63,4 +62,3 @@ public class Student {
         this.address = address;
     }
 }
-
