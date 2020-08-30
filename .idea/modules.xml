@@ -14,8 +14,11 @@
       <module fileurl="file://$PROJECT_DIR$/myException/myException.iml" filepath="$PROJECT_DIR$/myException/myException.iml" />
       <module fileurl="file://$PROJECT_DIR$/myExtends/myExtends.iml" filepath="$PROJECT_DIR$/myExtends/myExtends.iml" />
       <module fileurl="file://$PROJECT_DIR$/myIO/myIO.iml" filepath="$PROJECT_DIR$/myIO/myIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myInterface/myInterface.iml" filepath="$PROJECT_DIR$/myInterface/myInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myLambda/myLambda.iml" filepath="$PROJECT_DIR$/myLambda/myLambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMap/myMap.iml" filepath="$PROJECT_DIR$/myMap/myMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/myMethod/myMethod.iml" filepath="$PROJECT_DIR$/myMethod/myMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myMethodReference/myMethodReference.iml" filepath="$PROJECT_DIR$/myMethodReference/myMethodReference.iml" />
       <module fileurl="file://$PROJECT_DIR$/myNet/myNet.iml" filepath="$PROJECT_DIR$/myNet/myNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/myOtherStream/myOtherStream.iml" filepath="$PROJECT_DIR$/myOtherStream/myOtherStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
