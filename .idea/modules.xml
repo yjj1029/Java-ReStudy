@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/myMethodReference/myMethodReference.iml" filepath="$PROJECT_DIR$/myMethodReference/myMethodReference.iml" />
       <module fileurl="file://$PROJECT_DIR$/myNet/myNet.iml" filepath="$PROJECT_DIR$/myNet/myNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/myOtherStream/myOtherStream.iml" filepath="$PROJECT_DIR$/myOtherStream/myOtherStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myReflect/myReflect.iml" filepath="$PROJECT_DIR$/myReflect/myReflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/myStream/myStream.iml" filepath="$PROJECT_DIR$/myStream/myStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/myString/myString.iml" filepath="$PROJECT_DIR$/myString/myString.iml" />
       <module fileurl="file://$PROJECT_DIR$/myThread/myThread.iml" filepath="$PROJECT_DIR$/myThread/myThread.iml" />
